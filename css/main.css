@@ -1,0 +1,139 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(255, 103, 108, 1) 50%);
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff676c;
+    margin: 20px 0;
+}
+
+.actor-lists {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 880px;
+    margin: 0 auto;
+
+}
+
+.actor-card {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.actor-profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.initials-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: white;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff676c;
+    background-color: #fff;
+    width: 100%;
+    max-width: 860px;
+    margin: 20px auto 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#selectedActors {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#selectedActors li {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: #ff676c;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.social-profiles {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-profiles a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #4400ff;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-indent: -9999px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.social-profiles a:hover {
+    opacity: 0.6;
+}
+
+.social-profiles a::before {
+    text-indent: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.social-profiles a[href*="facebook"]::before {
+    content: 'F';
+}
+
+.social-profiles a[href*="twitter"]::before {
+    content: 'T';
+}
+
+.social-profiles a[href*="instagram"]::before {
+    content: 'I';
+}
